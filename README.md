@@ -1,2 +1,2 @@
-# Spring
-Spring Tutorial projects
+# Spring & Spring boot
+Spring Practice projects
