@@ -1,19 +1,27 @@
 #----------------------------------------------------
 #use below lines if you want local files to be served
 #----------------------------------------------------
-spring:
-  profiles:
-    active:
-    - 'native' 
-#----------------------------------------------------
-
-
-##----------------------------------------------------
-##use below lines if you want local files to be served
-##----------------------------------------------------
 #spring:
 #  profiles:
 #    active:
 #    - 'native' 
+#----------------------------------------------------
+
+
+##----------------------------------------------------
+##use below lines if you git repository files to be served
+##----------------------------------------------------
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vpellella/SecureFiles
+          username: vpellella
+          passphrase: P@rv@thi123
+          password: P@rv@thi123
+          default-label: main
+          search-paths: Spring/Spring_Boot/config-server,Spring/Spring_Boot/config-server/* 
+
 ##----------------------------------------------------
 #
