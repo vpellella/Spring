@@ -1,27 +1,34 @@
 #----------------------------------------------------
 #use below lines if you want local files to be served
 #----------------------------------------------------
-#spring:
-#  profiles:
-#    active:
-#    - 'native' 
+spring:
+  profiles:
+    active: native
 #----------------------------------------------------
-
+# URLs to be hit to serve corresponding files
+#http://localhost:8080/server/default - for serving default files located at resources/config
+#http://localhost:8080/server/dev - for serving dev & default files located at resources/config
+#http://localhost:8080/server/asd - for serving default files located at resources/config
 
 ##----------------------------------------------------
 ##use below lines if you git repository files to be served
 ##----------------------------------------------------
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/vpellella/SecureFiles
-          username: vpellella
-          passphrase: P@rv@thi123
-          password: P@rv@thi123
-          default-label: main
-          search-paths: Spring/Spring_Boot/config-server,Spring/Spring_Boot/config-server/* 
-
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/vpellella/SecureFiles
+#          username: vpellella
+#          passphrase: P@rv@thi123
+#          password: P@rv@thi123
+#          default-label: main
+#          search-paths: Spring/Spring_Boot/config-server,Spring/Spring_Boot/config-server/* 
 ##----------------------------------------------------
-#
+# URLs to be hit to serve corresponding files
+#localhost:8080/banks/dev - for serving dev & default files  from banks & config-server
+#localhost:8080/banks/prod  - for serving prod & default files from banks & config-server
+#localhost:8080/banks/default  - for serving default files from banks & config-server
+#localhost:8080/banks/asd  - for serving default files from banks & config-server
+#localhost:8080/asyw/asd  - for serving default files from config-server
+#http://localhost:8080/banks-prod.properties - exact file to be served able to serve both yml & properties for each file
