@@ -1,0 +1,7 @@
+spring:
+  application:
+#    name: customer-service
+     name: profile
+      cloud:    config:      profile: prod      enabled: false
+      server:
+ port: 9100
