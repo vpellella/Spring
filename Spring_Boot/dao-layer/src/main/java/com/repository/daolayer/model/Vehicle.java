@@ -1,5 +1,6 @@
 package com.repository.daolayer.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,9 +26,13 @@ public class Vehicle
 	
 	private String type;
 	
+	@Column(length = 15, nullable = false, unique = true)
+	private String registrationNo;
+	
 	private String specifications;
 	
 	private Integer year;
+	
 	
 	private Boolean isAvailable;
 
