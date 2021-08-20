@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: vehicle-provider-test
+  cloud:
+    config:
+      profile: prod
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;user=;password=;DatabaseName=RentVehicle
+    username: rentvehicleadmin
+    password: Admin123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+    properties:
+      hibernate:
+       dialect: org.hibernate.dialect.SQLServerDialect
+server:
+  port: 0
+#eureka:
+#  client:
+#    eureka-server-port: 7500
