@@ -20,9 +20,9 @@
 ##      server:
 ##        git:
 ##          uri: https://github.com/vpellella/SecureFiles
-##          username: vpellella
-##          passphrase: P@rv@thi123
-##          password: P@rv@thi123
+##          username: <username>
+##          passphrase: <password>
+##          password: <password>
 ##          default-label: main
 ##          search-paths: Spring/Spring_Boot/config-server,Spring/Spring_Boot/config-server/* 
 ###----------------------------------------------------
@@ -44,8 +44,8 @@ spring:
       server:
         git:
           uri: https://github.com/vpellella/SecureFiles
-          username: vpellella
-          passphrase: P@rv@thi123
-          password: P@rv@thi123
+          username: <username
+          passphrase: <password>
+          password: <password>
           default-label: main
           search-paths: rent-vehicle/customer-profile,rent-vehicle/customer-profile/*,rent-vehicle/vehicle-profile,rent-vehicle/vehicle-profile/*
